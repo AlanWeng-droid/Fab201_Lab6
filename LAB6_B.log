@@ -1,0 +1,15 @@
+GowinSynthesis start
+Running parser ...
+Analyzing VHDL file 'D:\FAP201(bailam)\LAB6\src\key_conditioner.vhd'
+Analyzing entity 'key_conditioner'("D:\FAP201(bailam)\LAB6\src\key_conditioner.vhd":4)
+Analyzing architecture 'rtl'("D:\FAP201(bailam)\LAB6\src\key_conditioner.vhd":10)
+Analyzing VHDL file 'D:\FAP201(bailam)\LAB6\src\top.vhd'
+Analyzing entity 'top'("D:\FAP201(bailam)\LAB6\src\top.vhd":5)
+Analyzing architecture 'rtl'("D:\FAP201(bailam)\LAB6\src\top.vhd":16)
+Processing 'top(rtl)'("D:\FAP201(bailam)\LAB6\src\top.vhd":5)
+ERROR (EX4676) : Binding entity 'key_conditioner' does not have port 'key_i'("D:\FAP201(bailam)\LAB6\src\top.vhd":29)
+ERROR (EX4676) : Binding entity 'key_conditioner' does not have port 'event_o'("D:\FAP201(bailam)\LAB6\src\top.vhd":30)
+Processing 'key_conditioner(rtl)'("D:\FAP201(bailam)\LAB6\src\key_conditioner.vhd":4)
+Processing of entity 'key_conditioner' failed("D:\FAP201(bailam)\LAB6\src\key_conditioner.vhd":4)
+ERROR (EX4844) : Netlist 'top(rtl)' remains a black box due to errors in its contents("D:\FAP201(bailam)\LAB6\src\top.vhd":5)
+GowinSynthesis finish

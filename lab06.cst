@@ -1,0 +1,33 @@
+// ==========================================
+// Ràng buộc chân (Constraint File) cho ACG525 - Lab 06
+// ==========================================
+
+// 1. Clock hệ thống (50MHz)
+IO_LOC "clk_i" T9;
+IO_PORT "clk_i" IO_TYPE=LVCMOS33;
+
+// 2. Đèn LEDs (LED0 đến LED3)
+IO_LOC "leds_o[0]" D14;
+IO_LOC "leds_o[1]" C14;
+IO_LOC "leds_o[2]" B9;
+IO_LOC "leds_o[3]" A9;
+IO_PORT "leds_o[0]" IO_TYPE=LVCMOS33;
+IO_PORT "leds_o[1]" IO_TYPE=LVCMOS33;
+IO_PORT "leds_o[2]" IO_TYPE=LVCMOS33;
+IO_PORT "leds_o[3]" IO_TYPE=LVCMOS33;
+
+// 3. Nút nhấn (Keys: KEY0, KEY1, KEY2 cho trò chơi)
+IO_LOC "btn_i[0]" B16;
+IO_LOC "btn_i[1]" A15;
+IO_LOC "btn_i[2]" C15;
+IO_PORT "btn_i[0]" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_PORT "btn_i[1]" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+IO_PORT "btn_i[2]" IO_TYPE=LVCMOS33 PULL_MODE=UP;
+
+// 4. Màn hình 7 Đoạn (7 Seg Led - SPI interface)
+IO_LOC "seg7_dio" F4;
+IO_LOC "seg7_rclk" F3;
+IO_LOC "seg7_sclk" H4;
+IO_PORT "seg7_dio" IO_TYPE=LVCMOS33;
+IO_PORT "seg7_rclk" IO_TYPE=LVCMOS33;
+IO_PORT "seg7_sclk" IO_TYPE=LVCMOS33;
